@@ -1,0 +1,335 @@
+<html>
+<head>
+<title>Redes Veiculares</title>    
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<section id="nav-bar">    
+ 
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#top">INÍCIO</a>
+      </li>      
+      <li class="nav-item">
+        <a class="nav-link" href="#introducao">INTRODUÇÃO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#caracteristicas">CARACTERÍSTICAS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#arquitetura">ARQUITETURA</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#protocolos">PROTOCOLOS</a>        
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#seguranca">SEGURANÇA</a>        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#aplicacoes">APLICAÇÕES</a>        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#conclusao">CONCLUSÃO</a>        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#perguntas">PERGUNTAS</a>        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#bibliografia">BIBLIOGRAFIA</a>        
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>  
+    
+<!--------------Início-------------->   
+    
+<section id="banner">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<p class="promo-title">REDES VEICULARES</p>
+
+<p>Este presente trabalho tem como principal objetivo, desmistificar o conceito de redes veiculares. Para tal fim, serão apresentadas as principais características desse tipo de rede, sua arquitetura, assim como seus principais protocolos de roteamento. Por fim, serão mostradas algumas aplicações e seus principais desafios no que tange a segurança da rede. </p>
+
+</div> 
+<div class="col-md-6 text-center">
+<img src="images/inicio.png" class="img-fluid">    
+</div>
+</div>    
+</div>    
+<img src="images/wave1.png" class="bottom-img">     
+</section>  
+    
+<!------------INTRODUÇÃO-------------->
+
+<section id="introducao">
+<div class="container text-center">
+<h1 class="title">INTRODUÇÃO</h1>
+<p>A crescente dependência da sociedade por transportes veiculares, sobretudo rodoviários, vem despertando atenção para questões relacionadas à congestionamento de tráfego e segurança. Diante disso, podemos considerar que a tecnologia possui alta relevância ao que tange a melhoria da experiência não só do condutor veicular, mas também dos passageiros.
+</p>
+<p>Nesse cenário, um dos pŕoximos desafios da evolução tecnológica consiste em desenvolver e melhorar sistemas de comunicação que possibilitem a interação entre diferentes veículos. Esse tipo de rede de interação vem recebendo o nome de rede veicular e é formada por veículos automotores e infraestrutura fixa localizada às margens de ruas ou estradas. Essas redes se diferenciam de outras redes sem fio, principalmente pela natureza de seus nós, estes, que apresentam alta mobilidade e trajetórias que acompanham os limites das vias públicas de acesso.
+</p>
+
+</div>    
+</section>
+  
+<!----------CARACTERÍSTICAS-------->   
+
+<section id="caracteristicas">
+<div class="container">
+<h1 class="title text-center">CARACTERÍSTCAS</h1>
+<p> As principais características das Redes Veiculares são: </p>
+<ul>
+    <br></br>
+  <li> alta mobilidade </li>
+  <li> rápida mudança de topologia de rede </li>
+  <li> ilimitado tamanho de rede </li>  
+  <li> frequente troca de informações </li>
+</ul>
+    <br></br>
+<p> Como o foco são conexões entre veículos, infraestrutura e pontos de acesso, é necessário que decisões sejam tomadas rapidamente. É preciso garantir rotas de segurança com grande velocidade, para se adequar às necessidades das grandes cidades, que também contam com grande complexidade de nós, cruzamentos de rodovias, pontes, viadutos, e outros tipos de rotas que se cruzam ao longo de diversos caminhos. Levando em consideração as possíveis tomadas de decisões, é necessário que a melhor solução seja escolhida, de acordo com a posição de veículos que se alteram em uma velocidade muito rápida, com constante atualização. <p>
+</div>  
+</section>
+    
+<!----------------ARQUITETURA---------------->  
+<section id="arquitetura">
+<div class="container">
+<h1 class="title text-center">ARQUITETURA</h1>
+<p> Redes veiculares podem ser diferenciadas de acordo com o tipo de conexão: </p>
+<br></br>
+   <ul>
+<li>  Entre veículos e o meio 
+ <ul>
+   <li> Conexão entre veículos (V2V) </li>
+   <li> Ciclistas e pedestres </li>
+   <li> Infraestrutura (V2I) </li>
+           
+  </ul>
+   </li>
+<li> Veículos e seus ocupantes </li>
+<li> Veículos e pontos de acesso (RSU) </li>
+</ul>
+   <br></br>
+
+<p> <div class="figure"> <center>  <img  src="images/figuraArquitetura.png"><p>Figura 3.1 - Arquitetura das Redes Veiculares </p>  </center> </div>
+<br></br>
+    
+    <p> Um grande benefício é o aumento da segurança nas ruas, já que o objetivo dessa conexão é poder evitar acidentes. São conexões que permitem controlar distância entre carros, dando mais segurança em manobras, tanto para os motoristas quanto para quem está do lado de fora do carro, como ciclistas e pedestres. Um sistema de comunicação avançado permite que seja detectado a presença de indivíduos, trazendo mais segurança para todos. </p>
+<br></br>
+    <p> É possível também melhorar o trânsito através do controle de semáforos, que contribui para um melhor fluxo na cidade, evitando engarrafamentos e até acidentes. Nos dias de hoje, vemos que essa possibilidade seria de grande importância para as rotas de BRT, que têm como objetivo rapidez mas que muitas vezes ficam parados em sinais com nenhum controle de tráfego. Além de priorizar veículos de emergência, como bombeiros e ambulâncias, e dar eficiência ao transporte de mercadorias. </p>
+       <br></br>
+ <p> Enquanto isso, ao dirigir um veículo conectado, será possível melhorar o monitoramento disponível, personalizando o painel de controle, estendendo a experiência digital local de forma dinâmica. É possível detectar problemas no carro com maior facilidade, incluindo a presença de gases poluentes em maiores quantidades, alertas de limite de velocidade de acordo com a localização e alertas de zonas específicas, como por exemplo os relacionados ao clima e pedágios, através de avisos dinâmicos. Podendo interagir com seus ocupantes, fornecendo maiores informações de rotas, locais disponíveis de acordo com suas necessidades (postos de gasolina, restaurantes, lazer, etc.), enquanto menos esforço é necessário para que essas informações cheguem até seus ocupantes. </p>
+</div>  
+</section>  
+    
+<!--------------PROTOCOLOS DE ROTEAMENTO-------------->   
+
+<section id="protocolos">
+    <div class="container">
+    <h1 class="title text-center">PROTOCOLOS</h1>
+    <p> <div> <center>  <img  src="images/routingProtocols.gif" height="330" width="550"><p>Figura 4.1 - Categorias dos protocolos de roteamento </p>  </center> </div>
+         <br></br>
+         <p>Devido à alta mobilidade dos nós da rede e a instabilidade dos enlaces sem fio, o cálculo de rotas em redes veiculares não é uma tarefa simples. Nesta seção, iremos descrever os principais protocolos de roteamento existentes até então. Estes, classificados como ilustra a figura acima. </p>
+         <br></br>         
+         <div class="row">
+            <div class="col-md-6 about-us">
+                <h4>1) Protocolos baseados em topologia</h4>
+              
+                <p>Os protocolos baseados em topologia buscam encontrar o melhor caminho entre uma origem e um destino na rede. Ou seja, o caminho que oferece o menor custo. Esse tipo de protocolo é caracterizado por manter uma tabela de roteamento com informações globais e a partir destas informações encontrar a melhor rota na rede. 
+                        Esses protocolos, podem ser divididos em proativos, reativos ou híbridos.
+                </p>
+                <br></br>
+                <h4>1.1) Proativos</h4>
+               
+                <p>Essa subcategoria de protocolos é caracterizada por manter uma tabela periodicamente atualizada de rotas para cada um dos nós da rede. Exemplos de protocolos proativos são:</p>
+                <p><i> - Destination Sequenced Distance Vector Routing (DSDV)</i></p>             
+              
+                <li> Vantagens</li>
+                <p> - Não há necessidade de descobrir as rotas, já que estão armazenadas na tabela.</p>
+                <p> - Para aplicações em tempo real, o tempo de latência é pequeno.</p>
+                
+                <li> Desvantagens</li>
+                <p> - Desperdício de largura de banda com o armazenamento de caminhos inativos.</p>
+                <p> - Aumento de sobrecarga, já que as tabelas são atualizadas regularmente.</p>
+                <p> - Alta sobrecarga de roteamento.</p>
+                <p> - Alta necessidade de armazenamento. </p>
+                <br></br>
+                <h4>1.2) Reativos</h4>
+          
+                <p>Já essa subcategoria de protocolos é caracterizada por construir a rota, somente quando existem dados para serem enviados. Exemplos de protocolos reativos são:</p>
+                <p><i> - Ad-hoc On-Demand Distance Vector (AODV) </i></p>             
+                <p><i> - Dynamic Source Routing (DSR) </p></i>
+               
+                <li> Vantagens</li>
+                <p> - Menor necessidade de recursos, já que não é necessário uma tabela de roteamento grande.</p>
+                <p> - Menor sobrecarga de roteamento.</p>
+                <p> - Economia na largura de banda.</p>
+                
+                <li> Desvantagens</li>
+                <p> - Tempo de latência alto, devido à necessidade de  pesquisar as rotas.</p>
+                <p> - Atraso na descoberta e manutenção de rotas.</p>   
+                <br></br>
+                <h4>1.3) Híbridos</h4>
+               
+                <p>Os protocolos híbridos atuam usando de forma intermediária as características proativas e reativas citadas anteriormente.Como por exemplo,atualizando sob demanda as rotas mais utilizadas. </p>
+                <br></br>
+                
+         <h4>2) Protocolos baseados em posicionamento (geográfico)</h4>
+      
+         <p>Como em redes veiculares não é necessário manter informações sobre as rotas para todos os nós da rede, grande parte dos algoritmos de roteamento são do tipo geográfico. O objetivo do roteamento baseado em posicionamento é, principalmente, prover escalabilidade em ambientes de alta mobilidade. Essa categoria de protocolos, assume que todos os nós presentes na rede possuem algum sistema de localização, como um GPS, ou até mesmo, utilizam informações de mapas digitais.  
+         </p>
+       
+         <p>Nesse cenário, para que seja possível encontrar a melhor rota entre a origem e o destino, cada nó precisa saber a sua posição, a posição dos seus vizinhos e o destino. Para que, dessa maneira, o roteamento possa se dar por múltiplos saltos, em que cada nó envia o pacote de dados para o vizinho com a melhor rota e assim sucessivamente até chegar ao endereço de destino.
+         </p>         
+        
+         <p>Essa categoria de protocolos não mantém tabelas de roteamento e não precisa armazenar o caminho global entre a origem e o destino, uma vez que, o caminho é projetado conforme os pacotes transitam entre os nós da rede.
+          Exemplos dessa categoria de protocolos são:</p>
+          <p><i> -Connectivity-Aware Routing (CAR)</i></p>             
+          <p><i> - Vehicle Assisted Data Delivery (VADD) </p></i>
+          
+             <li> Vantagens</li>
+           <p> - Não há a necessidade de descobrir e gerenciar rotas.</p>
+           <p> - Adequado para ambientes de alta mobilidade.</p>
+          <p>  - Alta escalabilidade.</p>
+          <p>  - Pouca sobrecarga.</p>
+                    
+             <li> Desvantagens</li>
+           <p> - Exigência de um serviço de posição de localização, como um GPS.</p>
+           <p> - Em locais sem satélite, como em túneis, o serviço não funciona.</p>
+          <br></br>                
+            
+            </div>
+            <div class="col-md-6 about-us">
+                <h4>3)    Protocolos  baseados em broadcasting </h4>
+                <p>Esse tipo de roteamento é frequentemente utilizado em situações de emergência ou  quando a mensagem deve ser propagada para um outro veículo muito distante, longe da faixa de transmissão.  A transmissão nessa categoria de protocolo consiste em enviar o pacote para todos os nós da rede, tendo como principal objetivo garantir a entrega do pacote.  Diferentes técnicas de seleção de retransmissores são utilizadas para diminuir a sobrecarga dessas mensagens.  Exemplos desse tipo de protocolo são:</p>
+                 <p><i> - BROADCOMM </i></p>             
+                 <p><i> - Urban Multi-hop Broadcast (UMB) </p></i>
+                  <li> Vantagens</li>
+                  <p> - A performance é melhor em ambientes com pequeno número de nós.</p>
+                  <p> - Os nós recebem a mensagem em um período curto de tempo.</p>
+                 <p> - Redução de sobrecarga..</p>
+                    <li> Desvantagens</li>
+                  <p> - Auto consumo de banda</p>
+                  <p> - A duplicação de mensagens é comum, causando congestionamento.</p>
+                  <br></br>          
+                <h4>4) Protocolos baseados em cluster </h4>
+                <p>Nessa categoria de protocolos os veículos são separados em grupos, denominados clusters, de acordo com as características de cada um desses veículos. Essas características podem ser escopo dinâmico ou estático , por exemplo. Para cada cluster, é eleito um cluster responsável por facilitar a comunicação dentro e fora do grupo.  Exemplos desse tipo de protocolo são: 
+       </p>
+                 <p><i> - DUH Clustering for Open IVC Networks </i></p>             
+                 <p><i> - (COIN), Hierarchical Cluster Based Routing (HCB) </p></i>
+                  <li> Vantagens</li>
+                  <p> - Pouca sobrecarga de roteamento.</p>
+                  <p> - A porcentagem de entrega de pacotes é alta.</p>
+                 <p> - Escalabilidade é consistente para grandes redes.</p>
+                    <li> Desvantagens</li>
+                  <p> - Alguns parâmetros vitais não são contabilizados, como velocidade e direção.</p>
+                  <p> - Em redes altamente dinâmicas, ocorrem atrasos.</p>
+              </div>
+          </div>
+    </div>  
+    
+    </section>
+
+<!----------------SEGURANÇA---------------->  
+<section id="seguranca">
+    <div class="container">
+    <h1 class="title text-center">SEGURANÇA</h1>
+    
+    </div>  
+    </section>  
+
+<!----------------APLICAÇÕES---------------->  
+<section id="aplicacoes">
+    <div class="container">
+    <h1 class="title text-center">APLICAÇÕES</h1>
+    
+    </div>  
+    </section>  
+<!----------------CONCLUSÃO---------------->  
+<section id="conclusao">
+    <div class="container">
+    <h1 class="title text-center">CONCLUSÃO</h1>
+    
+    </div>  
+    </section>  
+<!----------------PERGUNTAS---------------->  
+<section id="perguntas">
+    <div class="container">
+    <h1 class="title text-center">PERGUNTAS</h1>
+    
+    </div>  
+    </section>  
+<!----------------BIBLIOGRAFIA---------------->  
+<section id="bibliografia">
+    <div class="container">
+    <h1 class="title text-center">BIBLIOGRAFIA</h1>
+    <li>Devangavi, Anil; Gupta Rajendra, Routing Protocols in VANET - A Survey, IEEE International Conference On Smart Technology for Smart Nation (2017) -  acesso em: 02/10/2019.
+      </li>
+       
+      <li>Doddamani, Spoorti; Kumar Aswani, Safety Information Routing Protocol in Vehicular Ad hoc Networks, IEEE Sponsored 2’nd international conference on electronics and communication systems (2015) - acesso em 28/08/2019.
+      </li>
+      <li>Makodia, Bhargav; Patel, Tushar; Parmar, Dr. Kiran; Hadia, Prof. S. K.; Shah, Prof. A. M. Implementing and analyzing routing protocols for self-organized vehicular adhoc network, IEEE 2013 Nirma University International Conference on Engineering (NUiCONE) - acesso em  28/08/2019.
+      </li>
+      <li>Yadav, Savita; Rajput, Neetu K.; Sagar, Dr. Anil K.; Maheshwari, Divya. Secure and Reliable Routing Protocols for VANETs, IEEE 2018 4th International Conference on Computing Communication and Automation (ICCCA) - acesso em  28/08/2019.
+      </li>
+      <li>Naumov, Valery; Gross, Thomas R.Connectivity-Aware Routing (CAR) in Vehicular Ad Hoc Networks, IEEE INFOCOM 2007 - acesso em  28/08/2019.
+      </li>
+       
+      <li>Jain, Garima; Pai, Dr. Madhusudan. Disponível em: <https://wiprodigital.com/2018/06/20/talking-cars-a-survey-of-protocols-for-connected-vehicle-communication/>
+       Acesso em: 28/08/2019. 
+          </li>
+      <li>
+      Gáspár, Péter; Szalay, Zsolt; Aradi, Szilárd. Highly Automated Vehicle Systems. Disponível em: <http://www.mogi.bme.hu/TAMOP/jarmurendszerek_iranyitasa_angol/index.html>
+       Acesso em: 01/10/2019. 
+      </li>
+      <li>Hill, Kelly. What is DSRC for the connected car? Disponível em: <https://www.rcrwireless.com/20151020/featured/what-is-dsrc-for-the-connected-car-tag6> Acesso em: 28/08/2019. 
+      </li>
+      <li>MELO, Pablo. Conhecendo o V2X - Conectando veículos para tudo. Disponível em: <https://www.embarcados.com.br/conhecendo-o-v2x/>
+       Acesso em: 28/08/2019.
+      </li>
+      <li>Figura 1.1: Disponível em:  https://www.fronteiras.com/noticias/mobilidade-urbana-no-fronteiras - 
+      Acesso em: 02/10/2019</li>
+      <li>Figura 4.1: Disponível em:  http://article.sapub.org/10.5923.j.jwnc.20130303.02.html - Acessado em: 03/10/2019</li>
+    </div>  
+    </section>       
+        
+        
+        
+        
+<!------------RODAPÉ------------>   
+<section id="footer">
+<img src="images/wave2.png" class="footer-img">   
+<div class="container">
+  <br>
+</br>
+<center><h1>Declaração de Autoria</h1></center>
+<br>
+</br>
+<p>"Este trabalho foi totalmente produzido pelos autores que declaram não terem violado os direitos autorais de terceiros, sejam eles pessoas físicas ou jurídicas. Havendo textos, tabelas e figuras transcritos de obras de terceiros com direitos autorais protegidos ou de domínio público tal como idéias e conceitos de terceiros, mesmo que sejam encontrados na Internet, os mesmos estão com os devidos créditos aos autores originais e estão incluídas apenas com o intuito de deixar o trabalho autocontido. O(s) autor(es) tem(êm) ciência dos Artigos 297 a 299 do Código Penal Brasileiro e também que o uso do artifício de copiar/colar texto de outras fontes e outras formas de plágio é um ato ilícito, condenável e passível de punição severa. No contexto da Universidade a punição não precisa se restringir à reprovação na disciplina e pode gerar um processo disciplinar que pode levar o(s) aluno(s) à suspensão;"</p>
+
+</div>
+    <hr>
+    <center>
+   <p>
+    Departamento de Engenharia Eletrônica e de Computação - UFRJ - Redes de Computadores II - Luís Henrique Maciel   </p>   
+    <p>Produzido por: Ana Lúcia Canto e Jéssica Martins.</p>
+  </center>
+</div>   
+</section>    
+
+
+</body>
+
+</html>

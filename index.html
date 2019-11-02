@@ -93,13 +93,20 @@
 <p> As principais características das Redes Veiculares são: </p>
 <ul>
     <br></br>
-  <li> alta mobilidade </li>
-  <li> rápida mudança de topologia de rede </li>
-  <li> ilimitado tamanho de rede </li>  
-  <li> frequente troca de informações </li>
+  <li> Alta mobilidade </li>
+  <p>Para atender às necessidades dos veículos, que se movimentam em alta velocidade, é preciso que as redes veiculares sejam capazes de captar a alta mobilidade dos mesmos.  </p>
+  <br>
+  <li> Rápida mudança de topologia de rede </li>
+  <p>A topologia de rede varia de acordo com o posicionamento do veículo. Logo, com alta mobilidade, também teremos grandes mudanças em seu posicionamento e, consequentemente, na topologia de rede formada por essa localização.  </p>
+  <br>
+  <li> Ilimitado tamanho de rede </li>  
+  <p></p>
+  <br>
+  <li> Frequente troca de informações </li>
+  <p>Como o foco das redes veiculares é a troca de informações, é importante que isso ocorra o mais rápido possível, pois pequenos atrasos podem causar consequências irreparáveis quando se trata de veículos em movimento.   </p>
+  <br>
 </ul>
     <br></br>
-<p> Como o foco são conexões entre veículos, infraestrutura e pontos de acesso, é necessário que decisões sejam tomadas rapidamente. É preciso garantir rotas de segurança com grande velocidade, para se adequar às necessidades das grandes cidades, que também contam com grande complexidade de nós, cruzamentos de rodovias, pontes, viadutos, e outros tipos de rotas que se cruzam ao longo de diversos caminhos. Levando em consideração as possíveis tomadas de decisões, é necessário que a melhor solução seja escolhida, de acordo com a posição de veículos que se alteram em uma velocidade muito rápida, com constante atualização. <p>
 </div>  
 </section>
     
@@ -108,29 +115,64 @@
 <div class="container">
 <h1 class="title text-center">ARQUITETURA</h1>
 <p> Redes veiculares podem ser diferenciadas de acordo com o tipo de conexão: </p>
-<br></br>
-   <ul>
-<li>  Entre veículos e o meio 
- <ul>
-   <li> Conexão entre veículos (V2V) </li>
-   <li> Ciclistas e pedestres </li>
-   <li> Infraestrutura (V2I) </li>
-           
-  </ul>
-   </li>
-<li> Veículos e seus ocupantes </li>
-<li> Veículos e pontos de acesso (RSU) </li>
-</ul>
-   <br></br>
+		<ul>
+		<li>  entre veículos e o meio (V2E) </li>
+			<ul>
+				<li> conexão entre veículos (V2V) <li>
+				<li> conexão entre veículos e pedestres (V2P)</li>
+				<li> conexão entre veículos e infraestrutura (V2I) </li>
+		   <ul>
+		<li> veículos e seus usuários (V2U) </li>
+		<li> veículos e pontos de acesso (V2N) </li>
+		</ul>
 
-<p> <div class="figure"> <center>  <img  src="images/figuraArquitetura.png"><p>Figura 3.1 - Arquitetura das Redes Veiculares </p>  </center> </div>
-<br></br>
-    
-    <p> Um grande benefício é o aumento da segurança nas ruas, já que o objetivo dessa conexão é poder evitar acidentes. São conexões que permitem controlar distância entre carros, dando mais segurança em manobras, tanto para os motoristas quanto para quem está do lado de fora do carro, como ciclistas e pedestres. Um sistema de comunicação avançado permite que seja detectado a presença de indivíduos, trazendo mais segurança para todos. </p>
-<br></br>
-    <p> É possível também melhorar o trânsito através do controle de semáforos, que contribui para um melhor fluxo na cidade, evitando engarrafamentos e até acidentes. Nos dias de hoje, vemos que essa possibilidade seria de grande importância para as rotas de BRT, que têm como objetivo rapidez mas que muitas vezes ficam parados em sinais com nenhum controle de tráfego. Além de priorizar veículos de emergência, como bombeiros e ambulâncias, e dar eficiência ao transporte de mercadorias. </p>
-       <br></br>
- <p> Enquanto isso, ao dirigir um veículo conectado, será possível melhorar o monitoramento disponível, personalizando o painel de controle, estendendo a experiência digital local de forma dinâmica. É possível detectar problemas no carro com maior facilidade, incluindo a presença de gases poluentes em maiores quantidades, alertas de limite de velocidade de acordo com a localização e alertas de zonas específicas, como por exemplo os relacionados ao clima e pedágios, através de avisos dinâmicos. Podendo interagir com seus ocupantes, fornecendo maiores informações de rotas, locais disponíveis de acordo com suas necessidades (postos de gasolina, restaurantes, lazer, etc.), enquanto menos esforço é necessário para que essas informações cheguem até seus ocupantes. </p>
+		<p> <div class="figure"> <center>  <img  src="images/figuraArquitetura.png" height="400" width="400"><p>Figura 3.1 - Arquitetura das Redes Veiculares </p>  </center> </div>
+		<br><br>
+		<h2>Veículos e o meio</h2>
+		<p>Um grande benefício da utilização de redes veiculares é o aumento da segurança nas ruas, que permitem evitar a causa de acidentes. Isso é possível através da interação entre veículos, entre a infraestrutura e a possibilidade de identificar pedestres e ciclistas nas ruas. Assim é possível detectar acidentes para desviar deles e, mais importante, evitar que acidentes sejam cometidos.
+		</p>
+		 <p>A possibilidade de identificar objetos e pessoas que estejam no trajeto faz com que seja possível desviar as rotas para que não prejudiquem o trânsito (causando engarrafamentos) e os passageiros dos automóveis. São conexões que permitem controlar distância entre carros, dando mais segurança em manobras, tanto para os motoristas quanto para os ciclistas e pedestres. Um sistema de comunicação avançado permite que seja disponibilizado mais segurança nas cidades.
+		</p>
+
+    <h3>Comunicação de emergência</h3>
+    <p>O Comitê Técnico de Comunicação de Curto Prazo Dedicado da SAE (DSRC) desenvolveu um dicionário de dados, o SAE J27355, com um conjunto de informações emergenciais, que são utilizadas para proporcionar rapidez na comunicação, incluindo avisos sobre violações da luz vermelha, velocidade da curva, zonas de velocidade / trabalho reduzidas, luzes de freio eletrônicas de emergência, colisões à frente, entre outras coisas. Tais mensagens são captadas por um automóvel e propagadas para outros, através do DSRC.
+    </p>
+
+    <h4> DSRC </h4>
+    <p> De acordo com o Escritório do Programa Conjunto de Sistemas de Transporte Inteligente do Departamento de Transportes dos EUA, o DSRC is é "um recurso de comunicação sem fio bidirecional de curto a médio alcance que permite uma transmissão de dados muito alta, crítica em aplicativos de segurança ativa com base em comunicações". Há um espectro de 75 MHz em torno de 5,9 GHz  dedicado à mobilidade veicular. A iniciativa prevê que o protocolo seja utilizado na comunicação entre veículos (V2V) e entre veículos e infra estrutura (V2I). 	
+    </p>
+    <p> É possível suportar troca de informações rápidas, em torno de 250 km/h, com alcance de 150 a 300 m, que é a distância em que o veículo deve estar para receber a mensagem,  mesmo que hajam grandes obstáculos, como um edifício ou até mesmo no momento em que o veículo estiver fazendo uma curva. Também é possível atender os requisitos de segurança e confiabilidade na transmissão em diferentes condições climáticas, o que proporciona robustez ao sistema. 
+    </p>
+    <p> Nesse protocolo, antes de enviar um pacote, é verificado a disponibilidade do canal  e se não há informações passando no momento. Assim, pode haver atraso enquanto aguarda que o canal fique limpo. Além disso, podem ocorrer colisões entre mensagens de dois ou mais dispositivos quando transmitidas em momentos sobrepostos. Com isso, não é possível garantir a integridade da mensagem. Para comunicação de segurança com veículos, o DSRC requer infraestrutura fixa denominada Road Side Units (RSUs).
+    </p>
+
+
+    <h2> Veículos e pontos de acesso</h2>
+    <p> É possível também melhorar o trânsito através do controle de semáforos, que contribui para um melhor fluxo na cidade, evitando engarrafamentos e até acidentes. As cidades inteligentes podem utilizar desse sistema para diminuir o tempo no trânsito e indicar melhores rotas. 
+   </p>
+    <p>Além de priorizar veículos de emergência, como bombeiros e ambulâncias, e dar eficiência ao transporte de mercadorias, também possibilita o compartilhamento de informações da pista e seu redor, como lombadas, limites de velocidades e lojas próximas, como shoppings e restaurantes. No caso dos restaurantes, podem passar para o painel do veículo informações como pratos do dia, preços e outras necessidades. Também pode ser utilizado para chamar serviços de emergência, disponibilizando informações de localização com precisão. 
+   </p>
+    <p>Nos dias de hoje, vemos que essa possibilidade seria de grande importância para as rotas de BRT, que têm como objetivo rapidez mas que muitas vezes ficam parados em sinais com nenhum controle de tráfego.  
+   </p>
+
+
+		<h2>Veículos e seus ocupantes</h2>
+		 <p>Ao dirigir um veículo conectado, será possível melhorar o monitoramento disponível, personalizando o painel de controle, estendendo a experiência digital local de forma dinâmica. É possível detectar problemas no carro com maior facilidade, incluindo a presença de gases poluentes em maiores quantidades, alertas de limite de velocidade de acordo com a localização e alertas de zonas específicas, como por exemplo os relacionados ao clima e pedágios, através de avisos dinâmicos. 
+		</p>
+		 <p>A partir da interação com seus ocupantes, é possível fornecer maiores informações de rotas, locais disponíveis de acordo com suas necessidades (postos de gasolina, restaurantes, lazer, etc.), enquanto menos esforço é necessário para que essas informações cheguem até seus ocupantes, proporcionando maior conforto. Também é útil para avisos de acidentes, congestionamentos e informações relacionadas à locais de interesse, como teatros, restaurantes, postos de gasolina, lojas de conveniência, e interesses personalizados durante a viagem, como interesse em música e comunicação com outras pessoas através de redes sociais. 
+		</p>
+
+		<h2> Necessidades e desafios </h2>
+		<ul>
+			<li> Recursos de equipamentos e energia nas estradas que possibilitam manter a comunicação; <li>
+			<li> Sistemas necessários para dar suporte ao gerenciamento de segurança para garantir uma rede confiável;</li>
+			<li> Serviços de mapeamento que fornecem informações detalhadas das estradas e sinalização; </li>
+			<li> Serviços de localização de alta precisão para identificar localização dos veículos; <li>
+			<li> Servidores para coletar, processar e distribuir informações aos usuários; </li>
+			<li> Garantir que o possível compartilhamento de espectro na faixa DSRC não afete adversamente o desempenho do V2I; </li>
+			<li> Desenvolvimento de padrões técnicos para interoperabilidade; <li>
+			<li> Garantir que os motoristas respondam adequadamente aos avisos V2I. </li>
+		<ul>
 </div>  
 </section>  
     

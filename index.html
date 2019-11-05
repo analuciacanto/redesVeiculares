@@ -123,7 +123,7 @@
 		<li> veículos e pontos de acesso (V2N) </li>
 		</ul>
 
-		<p> <div class="figure"> <center>  <img  src="images/figuraArquitetura.png" height="400" width="400"><p>Figura 3.1 - Arquitetura das Redes Veiculares </p>  </center> </div>
+		<p> <div class="figure"> <center>  <img  src="images/figuraArquitetura.png" ><p>Figura 3.1 - Arquitetura das Redes Veiculares </p>  </center> </div>
 		<br><br>
 		<h2>Veículos e o meio</h2>
 		<p>Um grande benefício da utilização de redes veiculares é o aumento da segurança nas ruas, que permitem evitar a causa de acidentes. Isso é possível através da interação entre veículos, entre a infraestrutura e a possibilidade de identificar pedestres e ciclistas nas ruas. Assim é possível detectar acidentes para desviar deles e, mais importante, evitar que acidentes sejam cometidos.
@@ -285,10 +285,40 @@
 <section id="seguranca">
     <div class="container">
     <h1 class="title text-center">SEGURANÇA</h1>
+      <p>Uma das maiores dificuldades encontradas na implantação de redes de computadores é garantir a total segurança da rede, mesmo diante de situações adversas e ataques mal intencionados. Quando se fala de redes veiculares, os desafios são ainda maiores ao  que tange à segurança de seus nós. Uma vez que, nesse tipo de rede garantimos também a segurança de usuários que podem estar conduzindo os veículos ou mesmo os pedestres.  Não obstante, faz-se necessário também garantir o total anonimato dos dados do condutor, visto que não seria apropriado que um atacante soubesse as rotas de determinado usuário, por exemplo. </p>
+     <p>São muitos os requisitos necessários para que se possa garantir a segurança de uma rede veicular de maneira íntegra. No entanto, podemos citar como os principais requisitos: autenticação dos nós, integridade e confidencialidade dos dados, anonimato, privacidade e controle de acesso.  
+    </p>
+    <p>A autenticação de nós, se mostra de suma importância para verificar a legitimidade de um dado nó na rede, o que auxilia  principalmente na diferenciação entre nós legítimos e nós intrusos. A integridade dos nós se mostra importante também no contexto de garantir que uma dada informação não seja facilmente alterada por um usuário. Assim como a integridade, a confidencialidade dos dados também desperta interesse, já que nem toda informação pode ser acessada livremente por todos os usuários da rede.O anonimato e a privacidade dos nós, são necessários principalmente para evitar ataques por rastreamento e impedir que autoridades não autorizadas possam localizar e rastrear veículos. Por último, o controle de acesso tem o intuito de garantir que cada nó só realize aquilo que está autorizado a fazer.  
+    </p>
+    <p>Algumas ferramentas vêm sendo desenvolvidas para suprir as necessidades desse tipo de rede. Para garantir a integridade dos dados e a autenticação dos nós vem sendo utilizado as assinaturas digitais e os códigos de autenticação de mensagens (MACs).  
+    </p>
+  <p>
+    A assinatura digital é uma técnica que utiliza criptografia para conferir segurança e integridade para uma dada informação. Essa assinatura é feita através da criação de um certificado, que possui dados sobre indivíduo ou empresas criptografado e protegidos pelo conceito de chaves públicas e privadas. Essas chaves são fundamentais para realizar um processo de assinatura eletrônica, pois são geradas aleatoriamente por funções matemáticas de alta complexidade. Elas são únicas, e uma só funciona em conjunto com a outra, como um encaixe.  Assim, a chave privada é guardada sob a posse do usuário, enquanto a pública é compartilhada com quem o usuário desejar no formato de certificado digital. 
+    </p>
+    <p> <div> <center>  <img  src="images/grafico.png"><p>Figura 5.1 - Exemplificação do conceito de assinatura digital.</p>  </center> </div>
+    <p>
+      Com o objetivo de garantir a privacidade dos nós nas redes vêm sendo propostas soluções baseadas em pseudônimos e assinaturas de grupo. Na solução baseada em pseudônimos, cada nó possui um conjunto de  pseudônimos associados a ele. Um pseudônimo é uma chave pública. Para que a assinatura seja realizada, o nó usa a chave secreta correspondente aquela chave pública.  Essas chaves públicas são descartadas em um curto período de tempo para evitar o rastreamento por atacantes, uma vez que não é difícil determinar se duas assinaturas diferentes foram geradas com o mesmo pseudônimo.   
+      </p>
+      <p>
+        Na solução baseada em assinaturas de grupo, os nós da rede são divididos em grupo e é associada uma chave pública a cada grupo. Para cada usuário é atribuída uma chave privada diferente para gerar assinaturas. Esse tipo de solução é caracterizado por impossibilitar que se saiba se duas assinaturas diferentes foram geradas pelo mesmo membro do grupo. Atualmente os pseudônimos vem sendo utilizados em maior escala, visto que seus algoritmos são mais eficientes. Entretanto, as assinaturas de grupo conferem um maior anonimato.
+        </p>
+        <p>
+          Por fim, para garantir o controle de acesso, são utilizadas memórias protegidas e a prova de falsificação e alteração.
+          </p>
+  </div>   
+  </section>  
+
+<<<<<<< HEAD
+=======
+<!----------------APLICAÇÕES---------------->  
+<section id="aplicacoes">
+    <div class="container">
+    <h1 class="title text-center">APLICAÇÕES</h1>
     
     </div>  
     </section>  
 
+>>>>>>> 19d1b672d8eb8e68c9810ac2236289ae8e8fb8a9
 <!----------------CONCLUSÃO---------------->  
 <section id="conclusao">
     <div class="container">
@@ -297,10 +327,12 @@
     </p>
     </div>  
     </section>  
+    
 <!----------------PERGUNTAS---------------->  
 <section id="perguntas">
     <div class="container">
     <h1 class="title text-center">PERGUNTAS</h1>
+<<<<<<< HEAD
     
 <h2>Cite duas características das Redes Veiculares. </h2>
 <p> Alta mobilidade, rápida mudança de topologia de rede, ilimitado tamanho de rede, frequente troca de informações. 
@@ -364,6 +396,9 @@
 <br><br>
 
     </div>  
+=======
+   </div>
+>>>>>>> 19d1b672d8eb8e68c9810ac2236289ae8e8fb8a9
     </section>  
 <!----------------BIBLIOGRAFIA---------------->  
 <section id="bibliografia">
@@ -381,21 +416,27 @@
       <li>Naumov, Valery; Gross, Thomas R.Connectivity-Aware Routing (CAR) in Vehicular Ad Hoc Networks, IEEE INFOCOM 2007 - acesso em  28/08/2019.
       </li>
        
-      <li>Jain, Garima; Pai, Dr. Madhusudan. Disponível em: <https://wiprodigital.com/2018/06/20/talking-cars-a-survey-of-protocols-for-connected-vehicle-communication/>
+      <li>Jain, Garima; Pai, Dr. Madhusudan. Disponível em: https://wiprodigital.com/2018/06/20/talking-cars-a-survey-of-protocols-for-connected-vehicle-communication
        Acesso em: 28/08/2019. 
           </li>
       <li>
-      Gáspár, Péter; Szalay, Zsolt; Aradi, Szilárd. Highly Automated Vehicle Systems. Disponível em: <http://www.mogi.bme.hu/TAMOP/jarmurendszerek_iranyitasa_angol/index.html>
+      Gáspár, Péter; Szalay, Zsolt; Aradi, Szilárd. Highly Automated Vehicle Systems. Disponível em: http://www.mogi.bme.hu/TAMOP/jarmurendszerek_iranyitasa_angol/index.html
        Acesso em: 01/10/2019. 
       </li>
-      <li>Hill, Kelly. What is DSRC for the connected car? Disponível em: <https://www.rcrwireless.com/20151020/featured/what-is-dsrc-for-the-connected-car-tag6> Acesso em: 28/08/2019. 
+      <li>Hill, Kelly. What is DSRC for the connected car? Disponível em: https://www.rcrwireless.com/20151020/featured/what-is-dsrc-for-the-connected-car-tag6 Acesso em: 28/08/2019. 
       </li>
-      <li>MELO, Pablo. Conhecendo o V2X - Conectando veículos para tudo. Disponível em: <https://www.embarcados.com.br/conhecendo-o-v2x/>
+      <li>MELO, Pablo. Conhecendo o V2X - Conectando veículos para tudo. Disponível em: https://www.embarcados.com.br/conhecendo-o-v2x/
        Acesso em: 28/08/2019.
       </li>
+      <li>GTA/PEE/COPPE - UFRJ - Redes Veiculares: Princípios, Aplicações e Desafios, Capítulo 5. Acesso em: 20/10/2019.        </li>
+
+      <h4 class="title text-center">Figuras</h4>
+
       <li>Figura 1.1: Disponível em:  https://www.fronteiras.com/noticias/mobilidade-urbana-no-fronteiras - 
       Acesso em: 02/10/2019</li>
       <li>Figura 4.1: Disponível em:  http://article.sapub.org/10.5923.j.jwnc.20130303.02.html - Acessado em: 03/10/2019</li>
+      <li>Figura 5.1: Disponível em: https://www.bry.com.br/blog/wp-content/uploads/2016/06/grafico.png - acessado em 03/11/2019
+      </li>
     </div>  
     </section>       
         
